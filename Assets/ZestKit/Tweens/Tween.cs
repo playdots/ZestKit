@@ -247,12 +247,6 @@ namespace Prime31.ZestKit
 
 		public virtual void start()
 		{
-            // catch if tried to create tween with null target
-            if ( ZestKit.enableBabysitter && _target == null ) {
-                recycleSelf();
-                return;
-            }
-
 			if( !_isFromValueOverridden )
 				_fromValue = _target.getTweenedValue();
 			

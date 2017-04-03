@@ -57,6 +57,10 @@ namespace Prime31.ZestKit
 
 		public Vector3 getTweenedValue()
 		{
+			// if the babysitter is enabled and we dont validate just silently do nothing
+			if( ZestKit.enableBabysitter && !_transform )
+				return Vector3.zero;
+				
 			switch( _targetType )
 			{
 				case TransformTargetType.Position:
