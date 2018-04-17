@@ -49,7 +49,7 @@ namespace Prime31.ZestKit
 		BounceOut,
 		BounceInOut,
 
-        PMOBounceOut,
+                PMOBounceOut,
 	}
 
 
