@@ -47,7 +47,9 @@ namespace Prime31.ZestKit
 
 		BounceIn,
 		BounceOut,
-		BounceInOut
+		BounceInOut,
+
+                PMOBounceOut,
 	}
 
 
@@ -62,6 +64,8 @@ namespace Prime31.ZestKit
 		{
 			switch( easeType )
 			{
+                case EaseType.PMOBounceOut:
+                    return EaseBouncePMO.ZestOut( t, duration );
 				case EaseType.Linear:
 					return Easing.Linear.EaseNone( t, duration );
 
